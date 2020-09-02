@@ -1,0 +1,50 @@
+{
+  "name": "ink-lib",
+  "version": "1.0.0",
+  "description": "inkbolle libs",
+  "main": "index.ts",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkbottle-cn/ink-lib.git"
+  },
+  "keywords": [
+    "typescript",
+    "utils"
+  ],
+  "author": "touchx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inkbottle-cn/ink-lib/issues"
+  },
+  "homepage": "https://github.com/inkbottle-cn/ink-lib#readme",
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.9.2",
+    "@rushstack/eslint-config": "^1.0.2",
+    "@types/jest": "^26.0.4",
+    "@types/node": "^14.0.23",
+    "@types/source-map-support": "^0.5.2",
+    "coveralls": "^3.1.0",
+    "docsify": "^4.11.4",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "git-hooks": "^1.1.10",
+    "jest": "^26.1.0",
+    "np": "^6.3.2",
+    "onchange": "^7.0.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.2",
+    "ts-node": "^8.10.2",
+    "typedoc": "^0.17.8",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.19"
+  }
+}
