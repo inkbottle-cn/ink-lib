@@ -9,7 +9,7 @@
   "scripts": {
     "ts-node": "ts-node test/index.ts",
     "build": "tsc",
-    "coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "coveralls": "jest --coverage ",
     "test": "jest"
   },
   "jest": {
