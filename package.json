@@ -7,7 +7,28 @@
     "node": ">=10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ts-node": "ts-node test/index.ts",
+    "build": "tsc",
+    "coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "testMatch": [
+      "/**/*.test.ts",
+      "/**/node_modules_test/*.test.ts"
+    ],
+    "globals": {
+      "ts-jest": {
+        "packageJson": "package.json"
+      }
+    },
+    "setupFilesAfterEnv": [
+      "jest-extended"
+    ]
   },
   "repository": {
     "type": "git",
@@ -36,6 +57,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "git-hooks": "^1.1.10",
     "jest": "^26.1.0",
+    "jest-extended": "^0.11.5",
     "np": "^6.3.2",
     "onchange": "^7.0.2",
     "prettier": "^2.0.5",
@@ -45,6 +67,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "source-map-support": "^0.5.19"
   }
 }
