@@ -3,4 +3,7 @@ node_js:
   - "14"
   - "12"
   - "10"
+install:
+  - npm install
+  
 script: true 
