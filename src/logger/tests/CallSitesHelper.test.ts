@@ -1,7 +1,7 @@
 import "ts-jest";
 const { EOL } = require("os");
 const util = require("util");
-import { getCallSites, callsitesSym } from "../../src/logger/CallSitesHelper";
+import { getCallSites, callsitesSym } from "../src/CallSitesHelper";
 
 describe("CallSitesHelper Tests", () => {
   test("return non-empty array", function () {
