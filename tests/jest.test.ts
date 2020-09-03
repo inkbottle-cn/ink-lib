@@ -135,13 +135,11 @@ describe("【使用Jest测试JavaScript(Mock篇)】", () => {
     expect(mockFn).toBeCalledTimes(1);
     // 断言mockFn传入的参数为1, 2, 3
     expect(mockFn).toHaveBeenCalledWith(1, 2, 3);
-/*
     mockFn
     .mockReturnValueOnce(10)
     .mockReturnValueOnce('x')
     .mockReturnValue(true);
     console.log(mockFn(), mockFn(), mockFn(), mockFn()); //10, 'x', true, true
-    */
   })
 
   test('测试jest.fn()返回固定值', () => {

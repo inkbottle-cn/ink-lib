@@ -9,8 +9,8 @@
   "scripts": {
     "ts-node": "ts-node tests/index.ts",
     "build": "tsc",
-    "coveralls": "jest --coverage && coveralls < coverage/lcov.info ",
-    "test": "jest"
+    "test": "jest --coverage",
+    "coveralls": "npm run test && coveralls < coverage/lcov.info "
   },
   "jest": {
     "verbose": true,
