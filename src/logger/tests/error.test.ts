@@ -117,28 +117,28 @@ describe("Logger: Error with details", () => {
     const error = new TestError("TestError");
     const errorObject = loggerJson.prettyError(error, false, false, false, 0);
     expect(errorObject).not.toBeNull();
-    expect(errorObject.stack.length).toBe(5);
+    expect(errorObject.stack.length).toBe(6);
   });
 
   test("Helper: Stack Trace offset: 1", (): void => {
     const error = new TestError("TestError");
     const errorObject = loggerJson.prettyError(error, false, false, false, 1);
     expect(errorObject).not.toBeNull();
-    expect(errorObject.stack.length).toBe(4);
+    expect(errorObject.stack.length).toBe(5);
   });
 
   test("Helper: Stack Trace offset: 4", (): void => {
     const error = new TestError("TestError");
     const errorObject = loggerJson.prettyError(error, false, false, false, 4);
     expect(errorObject).not.toBeNull();
-    expect(errorObject.stack.length).toBe(1);
+    expect(errorObject.stack.length).toBe(2);
   });
 
   test("Helper: Stack Trace offset: 5", (): void => {
     const error = new TestError("TestError");
     const errorObject = loggerJson.prettyError(error, false, false, false, 5);
     expect(errorObject).not.toBeNull();
-    expect(errorObject.stack.length).toBe(0);
+    expect(errorObject.stack.length).toBe(1);
   });
 
   test("Helper: Stack Trace offset: 6", (): void => {
@@ -165,7 +165,7 @@ describe("Logger: Error with details", () => {
     const error = new TestError("TestError");
     const errorObject = loggerJson.prettyError(error, false, false, false, -1);
     expect(errorObject).not.toBeNull();
-    expect(errorObject.stack.length).toBe(5);
+    expect(errorObject.stack.length).toBe(6);
   });
 
   test("Helper: Stack Trace limit: Infinity", (): void => {
@@ -179,7 +179,7 @@ describe("Logger: Error with details", () => {
       Infinity
     );
     expect(errorObject).not.toBeNull();
-    expect(errorObject.stack.length).toBe(5);
+    expect(errorObject.stack.length).toBe(6);
   });
 
   test("Helper: Stack Trace limit: 1", (): void => {
