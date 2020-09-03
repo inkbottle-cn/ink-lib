@@ -32,4 +32,4 @@ jobs:
             node-version: ${{ matrix.node }}
       - run: 
            npm install
-           npm test
+           npm run coveralls 
