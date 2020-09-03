@@ -7,9 +7,9 @@
     "node": ">=10"
   },
   "scripts": {
-    "ts-node": "ts-node test/index.ts",
+    "ts-node": "ts-node tests/index.ts",
     "build": "tsc",
-    "coveralls": "jest --coverage ",
+    "coveralls": "jest --coverage && coveralls < coverage/lcov.info ",
     "test": "jest"
   },
   "jest": {
